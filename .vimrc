@@ -1,0 +1,10 @@
+set expandtab
+set tabstop=4
+set autoindent
+set shiftwidth=4
+set number
+set noswapfile
+set backspace=2
+set hlsearch
+execute pathogen#infect()
+set nocompatible
