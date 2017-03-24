@@ -1,3 +1,5 @@
+syntax on
+colorscheme nordisk
 set expandtab
 set tabstop=4
 set autoindent
@@ -8,3 +10,10 @@ set backspace=2
 set hlsearch
 execute pathogen#infect()
 set nocompatible
+set rtp+=~/.vim/bundle/Vundle.vim
+:call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+call vundle#end()
+filetype plugin indent on   
