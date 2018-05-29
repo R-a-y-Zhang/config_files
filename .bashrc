@@ -115,4 +115,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-PATH="/home/horimori/.conscript/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/horimori/.sdkman"
+[[ -s "/home/horimori/.sdkman/bin/sdkman-init.sh" ]] && source "/home/horimori/.sdkman/bin/sdkman-init.sh"
